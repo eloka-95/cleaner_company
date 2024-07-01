@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --main-bg: #ffffff;
+  --blue-bg: #3f5d97;
+  --orange-bg: #f69400;
+  --Alice_Blue-bg: #f5f8fd;
+  --text-color1: #f5f8fd;
+}
+
+body {
+  background-color: var(--main-bg);
+  font-family: "Rubik", sans-serif;
+}
+
+.header {
+  background-color: var(--blue-bg);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color1);
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.header .time-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+
+.time-container span {
+  font-size: 12px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.header .appointment {
+  font-size: 12px;
+  background-color: var(--orange-bg);
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.time-container img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav .icon {
+  display: none;
+}
+
+nav .logo img {
+  width: 50px;
+}
+
+
+.nav-link ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+}
+
+.nav-link ul li {
+  font-size: 14px;
+  color: var(--blue-bg);
+  list-style: none;
+}
+
+.nav-link ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link ul li:first-child a {
+  color: var(--orange-bg);
+}

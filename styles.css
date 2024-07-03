@@ -4,14 +4,12 @@
   box-sizing: border-box;
 }
 
-
 :root {
   --main-bg: #ffffff;
   --blue-bg: #3f5d97;
   --orange-bg: #f69400;
   --Alice_Blue-bg: #f5f8fd;
   --text-color1: #f5f8fd;
-  
 }
 
 body {
@@ -73,9 +71,8 @@ nav .icon {
 }
 
 nav .logo img {
-  width: 50px;
+  width: 80px;
 }
-
 
 .nav-link ul {
   display: flex;
@@ -98,27 +95,26 @@ nav .logo img {
 
 .nav-link ul li:first-child a {
   color: var(--orange-bg);
-  
 }
 /* **********header and navbar section end's here ****************** */
 
-
-
 /* **********************landing page section starts here ****************** */
-.landing_pg{
+.landing_pg {
   width: 100%;
-  height: 20rem;
-background-image: url("./media/images/Rectangle 3.png");
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-background-position-y: 10%;
-margin: 0 10px;
-display: flex;
-justify-content: center;
-align-items: center;
+  aspect-ratio: 16 / 9;
+  height: clamp(60vh, 80vh, 100vh);
+  background-image: url("./media/images/Rectangle 3.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 10%;
+  padding: clamp(5px, 10px, 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.landing_pg .landing_items{
+
+.landing_pg .landing_items {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,16 +123,294 @@ align-items: center;
   color: var(--text-color1);
   text-align: center;
 }
-.landing_items p{
-  font-size: 8px;
+.landing_items h2 {
+  font-size: 60px;
 }
-.landing_items button{
+.landing_items p {
+  font-size: 20px;
+}
+.landing_items button {
   border: none;
   background-color: var(--orange-bg);
   border-radius: 5px;
-color: var(--text-color1);
-font-size: 8px;
-  padding: 2px 8px;
-  margin-top: 5px;
+  color: var(--text-color1);
+  font-size: 16px;
+  padding: 8px 20px;
+  margin-top: 10px;
 }
 /* **********************landing page section end's here ****************** */
+
+/* *********About_us Section ********* */
+.about_us {
+  width: 100%;
+  height: auto;
+  padding: clamp(5px, 10px, 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 15px;
+}
+.about_us .service_info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(10px, 5vw, 80px); /* Adjust the gap responsively */
+  align-items: center;
+}
+.service_info div {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.service_info div span {
+  width: clamp(10em, 12em, 20vw); /* Adjust the width responsively */
+  height: clamp(10em, 12em, 20vw); /* Adjust the height responsively */
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service_info div p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#circle1 {
+  background-image: url("./media/images/circle1.png");
+  border: 2px solid var(--orange-bg);
+}
+#circle2 {
+  background-image: url("./media/images/circle2.png");
+}
+#circle3 {
+  background-image: url("./media/images/circle3.png");
+}
+#circle4 {
+  background-image: url("./media/images/circle4.png");
+}
+.service_info div span:hover {
+  border: 2px solid var(--orange-bg);
+}
+
+:root {
+  --blue-bg: #000080; /* Example color */
+}
+
+.about_us_text {
+  width: 100%; /* Adjust the min and max values based on your design */
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_info {
+  width: 50%;
+  height: 550px;
+  position: relative;
+}
+
+.img_info img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.img_text {
+  width: 300px;
+  height: 200px;
+  background-color: #f59e3e;
+  position: absolute;
+  top: 80%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.img_text h4 {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 4px;
+  color: #f5f8fd;
+}
+
+.img_text hr {
+  width: 20%;
+  border: 1px solid #f5f8fd;
+}
+
+.text_item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 2px;
+}
+
+.text_wrap {
+  width: 40%;
+  height: 550px;
+  text-align: left;
+  text-wrap: wrap;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.text_wrap h3 {
+  color: var(--blue-bg);
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.text_wrap p {
+  width: 80%;
+  color: var(--blue-bg);
+  text-align: left;
+  font-size: 14px;
+  text-wrap: wrap;
+  line-height: 20px;
+}
+
+.text_wrap h5 {
+  color: var(--blue-bg);
+  text-align: left;
+  font-size: 16px;
+  text-wrap: wrap;
+}
+
+.text_wrap button {
+  text-align: center;
+  font-size: 10px;
+  border: none;
+  background-color: #f59e3e;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  color: #f5f8fd;
+}
+
+/* Responsive styles */
+@media (max-width: 1114px), (max-width: 848px) {
+  .about_us_text {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .text_wrap {
+    margin-left: 20px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 834px) {
+  /* Tablet and smaller */
+  .about_us_text {
+    flex-direction: column;
+  }
+
+  .img_info,
+  .text_wrap {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .img_info img {
+    width: 100%;
+    height: auto;
+  }
+
+  .img_text {
+    width: 380px;
+    height: 240px;
+    background-color: #f59e3e;
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text_item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 2px;
+    font-size: 20px;
+  }
+  .text_wrap {
+    gap: 10px;
+  }
+  .text_wrap h3 {
+    font-size: 16px;
+  }
+
+  .text_wrap p,
+  .text_wrap h5 {
+    font-size: 16px;
+  }
+
+  .text_wrap button {
+    font-size: 16px;
+    padding: 12px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile */
+  .img_info img {
+    width: 100%;
+    height: auto;
+  }
+
+  .img_text {
+    width: 240px;
+    height: 150px;
+    background-color: #f59e3e;
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+
+  .img_text h4 {
+    font-size: 12px;
+    line-height: 1.5px;
+  }
+
+  .text_wrap h3 {
+    font-size: 12px;
+  }
+
+  .text_wrap p,
+  .text_wrap h5 {
+    font-size: 12px;
+  }
+
+  .text_wrap button {
+    font-size: 10px;
+    padding: 10px;
+    width: 100px;
+  }
+}
+
+/* *********End Of About_us Section ********* */

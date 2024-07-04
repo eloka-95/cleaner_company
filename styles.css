@@ -383,12 +383,12 @@ nav .logo img {
   }
 
   .img_text {
-    width: 240px;
+    width: 250px;
     height: 150px;
     background-color: #f59e3e;
     position: absolute;
     top: 90%;
-    left: 85%;
+    left: 69%;
     transform: translate(-50%, -50%);
   }
 

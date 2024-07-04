@@ -54,6 +54,7 @@
     margin-right: 3px;
   }
 
+
   nav {
     align-items: flex-start;
   }
@@ -92,7 +93,7 @@
   .header .appointment {
     font-size: 9px;
   }
-
+  
   .nav-link {
     display: none;
     flex-direction: column;
@@ -123,4 +124,6 @@
   nav .icon {
     display: block;
   }
+
+ 
 }
